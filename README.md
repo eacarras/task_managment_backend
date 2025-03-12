@@ -2,6 +2,9 @@
 
 I write this API for handle a small UI that needs to handle states in a board of tasks
 
+## Simple Architecture
+<img width="688" alt="Screenshot 2025-03-12 at 4 39 30 AM" src="https://github.com/user-attachments/assets/be77a3df-cd02-43c9-ad1f-1263694dc490" />
+
 I decide to use the following libraries:
 
 fastapi: Framework para construir APIs.
