@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: task-management-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/taskdb
+    networks:
+      - task-management-network
+
+  mongo:
+    image: mongo:latest
+    container_name: task-management-mongo
+    volumes:
+      - mongo_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d  # Creamos colecciones iniciales
+    networks:
+      - task-management-network
+
+volumes:
+  mongo_data:
+
+networks:
+  task-management-network:
+    driver: bridge

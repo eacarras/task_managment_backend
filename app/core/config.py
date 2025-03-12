@@ -4,7 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()  # Cargar variables del archivo .env
 
-MONGO_URI = os.getenv("MONGO_URI")
+# Conexión a MongoDB usando la URI configurada en Docker Compose
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongo:27017/taskdb")
 DATABASE_NAME = "task-managment"
 
 client = AsyncIOMotorClient(MONGO_URI)
