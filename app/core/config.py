@@ -10,3 +10,4 @@ DATABASE_NAME = "task-managment"
 client = AsyncIOMotorClient(MONGO_URI)
 db = client[DATABASE_NAME]
 tasks_collection = db["tasks"]
+users_collection = db["users"]
