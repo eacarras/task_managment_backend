@@ -1,4 +1,4 @@
-db = db.getSiblingDB('taskdb');  // Conectar a la base de datos 'taskdb'
+db = db.getSiblingDB('task_management');  // Conectar a la base de datos 'task_management'
 
 // Crear la colección 'users' si no existe
 db.createCollection('users');

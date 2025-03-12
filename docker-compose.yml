@@ -11,15 +11,16 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URI=mongodb://mongo:27017/taskdb
+      - MONGO_URI=mongodb://mongo:27017/task_management
     networks:
       - task-management-network
 
   mongo:
     image: mongo:latest
     container_name: task-management-mongo
+    ports:
+      - "27017:27017"
     volumes:
-      - mongo_data:/data/db
       - ./mongo-init:/docker-entrypoint-initdb.d  # Creamos colecciones iniciales
     networks:
       - task-management-network
