@@ -59,5 +59,4 @@ export PYTHONPATH=$(pwd) && pytest
 - [ ] Add more test related with auth like an endpoint needs to be auth
 - [ ] Mock responses and calls in the tests
 - [ ] Create documentation
-- [ ] Deploy to lambdas as serverless
 - [ ] Improve and clean more the code adding the best practices and focus on functional programming
