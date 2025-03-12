@@ -37,9 +37,9 @@ export PYTHONPATH=$(pwd) && pytest
 ```
 
 ## TODO && Stuff to improve
-[] Add more test related with auth like an endpoint needs to be auth
-[] Dockerize the app 
-[] Mock responses and calls in the tests
-[] Create documentation
-[] Deploy to lambdas as serverless
-[] Improve and clean more the code adding the best practices and focus on functional programming
+- [ ] Add more test related with auth like an endpoint needs to be auth
+- [ ] Dockerize the app 
+- [ ] Mock responses and calls in the tests
+- [ ] Create documentation
+- [ ] Deploy to lambdas as serverless
+- [ ] Improve and clean more the code adding the best practices and focus on functional programming
