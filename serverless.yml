@@ -5,7 +5,7 @@ provider:
   runtime: python3.8
   region: us-east-1
   environment:
-    MONGO_URI: ${secrets:MONGO_URI}  # Cargar desde las variables de entorno del sistema o GitHub Secrets
+    MONGO_URI: ${env:MONGO_URI}
 
 functions:
   taskHandler:
